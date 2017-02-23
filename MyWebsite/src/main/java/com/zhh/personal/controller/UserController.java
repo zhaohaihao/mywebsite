@@ -24,7 +24,7 @@ public class UserController extends BaseController{
 	public String test(@ModelAttribute("example")User user, ModelMap mm, HttpSession ses, HttpServletRequest req){
 		mm.put("msg", userService.getUser().toString());
 //		mm.put("msg", "你好");
-		return "demo";
+		return "index";
 	}
 	
 }
