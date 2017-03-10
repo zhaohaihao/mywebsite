@@ -1,8 +1,8 @@
-package com.zhh.personal.dao;
+package com.zhh.personal.dao.user;
 
 import java.util.List;
 
-import com.zhh.personal.entity.User;
+import com.zhh.personal.entity.user.User;
 
 public interface UserMapper {
 	

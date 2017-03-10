@@ -1,4 +1,4 @@
-package com.zhh.personal.entity;
+package com.zhh.personal.entity.user;
 
 public class User {
 	

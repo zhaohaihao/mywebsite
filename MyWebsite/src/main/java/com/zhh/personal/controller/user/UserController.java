@@ -1,4 +1,4 @@
-package com.zhh.personal.controller;
+package com.zhh.personal.controller.user;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.zhh.personal.base.BaseController;
-import com.zhh.personal.entity.User;
-import com.zhh.personal.service.UserService;
+import com.zhh.personal.entity.user.User;
+import com.zhh.personal.service.user.UserService;
 
 @Controller
 public class UserController extends BaseController{
