@@ -8,7 +8,7 @@
      <plugins>
 		<plugin interceptor="com.zhh.common.pagination.MybaitsPagePlugin">
 			<property name="dialect" value="sqlserver"/>
-			<property name="pageSqlId" value=".*Page.*"/>
+			<property name="pageSqlId" value=".*ListPage.*"/>
 		</plugin>
 	</plugins>
 </configuration>
