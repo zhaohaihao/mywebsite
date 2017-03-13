@@ -1,5 +1,8 @@
 package com.zhh.personal.svs.article;
 
-public interface ArticleSvs {
+import com.zhh.personal.svs.BaseSvs;
+
+public interface ArticleSvs extends BaseSvs {
+	
 	
 }

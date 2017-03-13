@@ -12,6 +12,6 @@ import java.lang.annotation.Target;
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface LoginTag {
+public @interface WebLoginTag {
 	boolean needLogin() default true;
 }

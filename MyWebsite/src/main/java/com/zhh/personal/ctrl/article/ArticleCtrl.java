@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.zhh.personal.ctrl.BaseCtrl;
 
 @Controller
+@RequestMapping("article")
 public class ArticleCtrl extends BaseCtrl{
 	
 	@RequestMapping(value = "test", method = { RequestMethod.GET, RequestMethod.POST })

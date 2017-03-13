@@ -1,5 +1,8 @@
 package com.zhh.personal.svs.gallery;
 
-public interface GallerySvs {
+import com.zhh.personal.svs.BaseSvs;
+
+public interface GallerySvs extends BaseSvs {
+	
 	
 }

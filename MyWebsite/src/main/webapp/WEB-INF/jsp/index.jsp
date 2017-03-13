@@ -1,10 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="ctx" value="${pageContext.request.contextPath}" />
 <!DOCTYPE HTML>
 <html>
 	<head>
 		<title>index</title>
-		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="${ctx}/css/main.css" />
 	</head>
 	<body>
 		<div class="page-wrap">
@@ -33,28 +37,28 @@
 									</header>
 									<div class="content">
 										<div class="media">
-											<a href="images/fulls/01.jpg"><img src="images/thumbs/01.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="images/fulls/01.jpg"><img src="../images/thumbs/01.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 										<div class="media">
-											<a href="images/fulls/05.jpg"><img src="images/thumbs/05.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="images/fulls/05.jpg"><img src="../images/thumbs/05.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 										<div class="media">
-											<a href="images/fulls/09.jpg"><img src="images/thumbs/09.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="images/fulls/09.jpg"><img src="../images/thumbs/09.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 										<div class="media">
-											<a href="images/fulls/02.jpg"><img src="images/thumbs/02.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="images/fulls/02.jpg"><img src="../images/thumbs/02.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 										<div class="media">
-											<a href="images/fulls/06.jpg"><img src="images/thumbs/06.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="images/fulls/06.jpg"><img src="../images/thumbs/06.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 										<div class="media">
-											<a href="images/fulls/10.jpg"><img src="images/thumbs/10.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="images/fulls/10.jpg"><img src="../images/thumbs/10.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 										<div class="media">
-											<a href="images/fulls/03.jpg"><img src="images/thumbs/03.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="images/fulls/03.jpg"><img src="../images/thumbs/03.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 										<div class="media">
-											<a href="images/fulls/07.jpg"><img src="images/thumbs/07.jpg" alt="" title="This right here is a caption." /></a>
+											<a href="images/fulls/07.jpg"><img src="../images/thumbs/07.jpg" alt="" title="This right here is a caption." /></a>
 										</div>
 									</div>
 									<footer>
@@ -126,12 +130,12 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="js/jquery.min.js"></script>
-			<script src="js/jquery.poptrox.min.js"></script>
-			<script src="js/jquery.scrolly.min.js"></script>
-			<script src="js/skel.min.js"></script>
-			<script src="js/util.js"></script>
-			<script src="js/main.js"></script>
+			<script src="../js/jquery.min.js"></script>
+			<script src="../js/jquery.poptrox.min.js"></script>
+			<script src="../js/jquery.scrolly.min.js"></script>
+			<script src="../js/skel.min.js"></script>
+			<script src="../js/util.js"></script>
+			<script src="../js/main.js"></script>
 
 	</body>
 </html>

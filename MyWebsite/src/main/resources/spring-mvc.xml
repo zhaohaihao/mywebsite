@@ -21,15 +21,28 @@
 	<!-- 静态资源处理 -->
 	<mvc:default-servlet-handler/>
 	
+	<!-- 拦截器 -->
+	<!-- 
+	<mvc:interceptors>
+		<mvc:interceptor>
+				 对所有的请求拦截使用/**, 对某个模块下的请求拦截使用：/myPath/* 
+			<mvc:mapping path="/**"/>
+			<ref bean="webLoginInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>	
+	
+	<bean id = "webLoginInterceptor" class="com.zhh.common.interceptor.WebLoginInterceptor"></bean>
+	 -->
+	 
 	<!-- 视图解析器 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/html/"></property>
-		<property name="suffix" value=".html"></property>
+		<property name="prefix" value="/WEB-INF/jsp/"></property>
+		<property name="suffix" value=".jsp"></property>
 	</bean>
 	
 	<!-- 防止静态文件被拦截 -->
-	<mvc:resources location="/css/" mapping="/css/**" />
-	<mvc:resources location="/fonts/" mapping="/fonts/**" />
-	<mvc:resources location="/images/" mapping="/images/**" />
-	<mvc:resources location="/js/" mapping="/js/**" />
+	<mvc:resources location="/css/" mapping="../css/**" />
+	<mvc:resources location="/fonts/" mapping="../fonts/**" />
+	<mvc:resources location="/images/" mapping="../images/**" />
+	<mvc:resources location="/js/" mapping="../js/**" />
 </beans>

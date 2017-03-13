@@ -7,4 +7,5 @@ import com.zhh.personal.svs.article.ArticleSvs;
 @Service
 public class ArticleSvsImpl implements ArticleSvs {
 
+	
 }
