@@ -7,7 +7,7 @@
 -->
 <configuration scan="true" scanPeriod="60 seconds" debug="false">
 	<!--通用的变量-->
-	<property name="APP_NAME" value="TimeManage" />
+	<property name="APP_NAME" value="MyWebsite" />
 	<property name="LOG_DIR" >${CATALINA_HOME}/logs</property>
 	
 	

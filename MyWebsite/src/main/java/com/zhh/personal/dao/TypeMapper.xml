@@ -4,4 +4,42 @@
 	<select id="" resultType="com.zhh.personal.entity.Type">
 
 	</select>
+	
+	<insert id="save" parameterType="Type" useGeneratedKeys="true" keyProperty="example.id">
+		INSERT INTO type
+		(
+		obj_type,
+		obj_id)
+		VALUES
+		(
+		#{example.objType},
+		#{example.objId})
+	</insert>
+	
+	<delete id="delete" parameterType="Integer">
+		DELETE FROM type
+		WHERE id = #{id}
+	</delete>
+	
+	<update id="update" parameterType="Type">
+		UPDATE type
+		<set >
+	      <if test="example.objType != null" >
+	        obj_type = #{example.objType},
+	      </if>
+	      <if test="example.objId != null" >
+	        obj_id = #{example.objId},
+	      </if>
+	    </set>
+	    WHERE id = #{example.id}
+	</update>	
+	
+	<select id="getById" parameterType="Integer">
+		SELECT * FROM type
+		WHERE id = #{id}
+	</select>
+	
+	<select id="getList" resultType="Type">
+		SELECT * FROM type
+	</select>
 </mapper>

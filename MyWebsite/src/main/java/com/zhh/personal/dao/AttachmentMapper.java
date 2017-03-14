@@ -1,5 +1,8 @@
 package com.zhh.personal.dao;
 
-public interface AttachmentMapper {
+import com.zhh.personal.dao.base.BaseMapper;
+import com.zhh.personal.entity.Attachment;
+
+public interface AttachmentMapper extends BaseMapper<Attachment> {
 
 }

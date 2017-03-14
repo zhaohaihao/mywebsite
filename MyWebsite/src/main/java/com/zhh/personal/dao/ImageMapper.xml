@@ -1,7 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
 <mapper namespace="com.zhh.personal.dao.ImageMapper">
-	<select id="" resultType="com.zhh.personal.entity.Image">
-
+	
+	<insert id="save" parameterType="Image" useGeneratedKeys="true" keyProperty="example.id">
+		INSERT INTO image
+		(
+		name,
+		depict,
+		url,
+		type,
+		state,
+		update_time)
+		VALUES
+		(
+		#{example.name},
+		#{example.depict},
+		#{example.url},
+		#{example.type},
+		#{example.state},
+		NOW())
+	</insert>
+	
+	<delete id="delete" parameterType="Integer">
+		DELETE FROM image
+		WHERE id = #{id}
+	</delete>
+	
+	<update id="update" parameterType="Image">
+		UPDATE image
+		<set >
+	      <if test="example.name != null" >
+	        name = #{example.name},
+	      </if>
+	      <if test="example.depict != null" >
+	        depict = #{example.depict},
+	      </if>
+	      <if test="example.url != null" >
+	        url = #{example.url},
+	      </if>
+	      <if test="example.type != null" >
+	        type = #{example.type},
+	      </if>
+	      <if test="example.state != null" >
+	        state = #{example.state},
+	      </if>
+	      <if test="example.createTime != null" >
+	        create_time = #{example.createTime,jdbcType=TIMESTAMP},
+	      </if>
+	    </set>
+	    WHERE id = #{example.id}
+	</update>	
+	
+	<select id="getById" parameterType="Integer">
+		SELECT * FROM image
+		WHERE id = #{id}
+	</select>
+	
+	<select id="getList" resultType="Image">
+		SELECT * FROM image
 	</select>
 </mapper>

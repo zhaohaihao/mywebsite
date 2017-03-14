@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
 <mapper namespace="com.zhh.personal.dao.CountMapper">
-	<select id="" resultType="com.zhh.personal.entity.Count">
-
+	
+	<insert id="save" parameterType="Count" useGeneratedKeys="true" keyProperty="example.id">
+		INSERT INTO count
+		(
+		type_id,
+		views)
+		VALUES
+		(
+		#{example.typeId},
+		#{example.views})
+	</insert>
+	
+	<delete id="delete" parameterType="Integer">
+		DELETE FROM count
+		WHERE id = #{id}
+	</delete>
+	
+	<update id="update" parameterType="Count">
+		UPDATE count
+		<set >
+	      <if test="example.typeId != null" >
+	        type_id = #{example.typeId},
+	      </if>
+	      <if test="example.views != null" >
+	        views = #{example.views},
+	      </if>
+	    </set>
+	    WHERE id = #{example.id}
+	</update>	
+	
+	<select id="getById" parameterType="Integer">
+		SELECT * FROM count
+		WHERE id = #{id}
+	</select>
+	
+	<select id="getList" resultType="Count">
+		SELECT * FROM count
 	</select>
 </mapper>

@@ -39,7 +39,7 @@ public class BaseCtrl {
 	
 	public final static String JSON_COM="json/common";
 	public final static String JUMP_URL="jumpUrl";
-	public final static String JUMP_PAGE_DEF="index.html";
+	public final static String JUMP_PAGE_DEF="index.jsp";
 	public final static String JUMP_VIEW="error/autoJump";
 	
 	/** 统一处理成功结果*/

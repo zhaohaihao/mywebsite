@@ -99,6 +99,19 @@
 		<version>1.2.7</version>
 	</dependency>
 	
+	<!-- 事务相关包 -->
+	<dependency>
+	    <groupId>org.aspectj</groupId>
+	    <artifactId>aspectjrt</artifactId>
+	    <version>1.7.3</version>
+	</dependency>
+	    
+	<dependency>
+	    <groupId>org.aspectj</groupId>
+	    <artifactId>aspectjweaver</artifactId>
+	    <version>1.7.4</version>
+	</dependency>
+	
   </dependencies>
   <build>
     <finalName>MyWebsite</finalName>
