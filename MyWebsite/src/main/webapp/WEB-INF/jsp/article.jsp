@@ -8,7 +8,7 @@
 		<title>Generic - Snapshot by TEMPLATED</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="${ctx}/css/main.css" />
 	</head>
 	<body>
 		<div class="page-wrap">
@@ -107,12 +107,12 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="js/jquery.min.js"></script>
-			<script src="js/jquery.poptrox.min.js"></script>
-			<script src="js/jquery.scrolly.min.js"></script>
-			<script src="js/skel.min.js"></script>
-			<script src="js/util.js"></script>
-			<script src="js/main.js"></script>
+			<script src="${ctx}/js/jquery.min.js"></script>
+			<script src="${ctx}/js/jquery.poptrox.min.js"></script>
+			<script src="${ctx}/js/jquery.scrolly.min.js"></script>
+			<script src="${ctx}/js/skel.min.js"></script>
+			<script src="${ctx}/js/util.js"></script>
+			<script src="${ctx}/js/main.js"></script>
 
 	</body>
 </html>

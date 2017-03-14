@@ -8,7 +8,7 @@
 		<title>contact</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="${ctx}/css/main.css" />
 	</head>
 	<body>
 		<div class="page-wrap">
@@ -32,14 +32,14 @@
 								<p>Scelerisque sagittis magna mi duis iaculis id erat pharetra vestibulum condimentum hac suspendisse tempor leo aliquet penatibus parturient donec parturient parturient. Vehicula suspendisse sem a adipiscing est ad donec ultricies senectus magnis convallis a fringilla adipiscing vulputate dui elementum diam ipsum eleifend condimentum placerat facilisi viverra mollis scelerisque. Commodo cum vestibulum hendrerit sit condimentum at rutrum vulputate scelerisque erat convallis himenaeos consequat a hac ultrices nam vel suspendisse nascetur dictum vulputate sed at.</p>
 								<section class="columns double">
 									<div class="column">
-										<span class="image left special"><img src="images/pic01.jpg" alt="" /></span>
+										<span class="image left special"><img src="${ctx}/images/pic01.jpg" alt="" /></span>
 										<h3>Parturient Consequat Neque</h3>
 										<p>
 											Adipiscing dis a mus a convallis condimentum molestie penatibus iaculis pulvinar vestibulum enim lacus suscipit mi dictumst hendrerit sit condimentum at rutrum vulputate vestibulum habitasse nam fusce a nascetur. Ut ullamcorper suspendisse malesuada tempus vestibulum commodo habitasse suspendisse magnis.
 										</p>
 									</div>
 									<div class="column">
-										<span class="image left special"><img src="images/pic02.jpg" alt="" /></span>
+										<span class="image left special"><img src="${ctx}/images/pic02.jpg" alt="" /></span>
 										<h3>Ridiculus Torquent Quam Accumsan</h3>
 										<p>
 											At sem phasellus elit class dapibus lectus posuere donec morbi in cras commodo faucibus ipsum vehicula fringilla. Risus hendrerit sit condimentum at rutrum vulputate fringilla dis curae metus ipsum imperdiet vulputate sapien dolorem ligula sapien curae consequat vestibulum urna. Nulla vulputate cum augue non arcu.
@@ -107,12 +107,12 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="js/jquery.min.js"></script>
-			<script src="js/jquery.poptrox.min.js"></script>
-			<script src="js/jquery.scrolly.min.js"></script>
-			<script src="js/skel.min.js"></script>
-			<script src="js/util.js"></script>
-			<script src="js/main.js"></script>
+			<script src="${ctx}/js/jquery.min.js"></script>
+			<script src="${ctx}/js/jquery.poptrox.min.js"></script>
+			<script src="${ctx}/js/jquery.scrolly.min.js"></script>
+			<script src="${ctx}/js/skel.min.js"></script>
+			<script src="${ctx}/js/util.js"></script>
+			<script src="${ctx}/js/main.js"></script>
 
 	</body>
 </html>

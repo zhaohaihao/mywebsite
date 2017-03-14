@@ -14,27 +14,10 @@ import com.zhh.personal.ctrl.BaseCtrl;
 @RequestMapping("contact")
 public class ContactCtrl extends BaseCtrl{
 	
-	@RequestMapping(value = "test", method = { RequestMethod.GET, RequestMethod.POST })
+	@RequestMapping(value = "test", method = { RequestMethod.GET, RequestMethod.POST }, produces = "text/html;charset=UTF-8")
 	public String test(ModelMap mm, HttpSession ses, HttpServletRequest req){
 //		mm.put("msg", "你好");
 		return "index";
 	}
 	
-	@RequestMapping(value = "test1", method = { RequestMethod.GET, RequestMethod.POST })
-	public String test1(ModelMap mm, HttpSession ses, HttpServletRequest req){
-//		mm.put("msg", "你好");
-		return "gallery";
-	}
-	
-	@RequestMapping(value = "test2", method = { RequestMethod.GET, RequestMethod.POST })
-	public String test2(ModelMap mm, HttpSession ses, HttpServletRequest req){
-//		mm.put("msg", "你好");
-		return "article";
-	}
-	
-	@RequestMapping(value = "test3", method = { RequestMethod.GET, RequestMethod.POST })
-	public String test3(ModelMap mm, HttpSession ses, HttpServletRequest req){
-//		mm.put("msg", "你好");
-		return "contact";
-	}
 }

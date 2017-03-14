@@ -16,7 +16,7 @@ import com.zhh.personal.ctrl.BaseCtrl;
 @RequestMapping("home")
 public class HomeCtrl extends BaseCtrl{
 	
-	@RequestMapping(value = "test", method = { RequestMethod.GET, RequestMethod.POST })
+	@RequestMapping(value = "test", method = { RequestMethod.GET, RequestMethod.POST }, produces = "text/html;charset=UTF-8")
 	public String test(ModelMap mm, HttpSession ses, HttpServletRequest req){
 		try {
 			Map<String, String> reqMap = getParam(null, req);
@@ -31,21 +31,4 @@ public class HomeCtrl extends BaseCtrl{
 		return "index";
 	}
 	
-	@RequestMapping(value = "test1", method = { RequestMethod.GET, RequestMethod.POST })
-	public String test1(ModelMap mm, HttpSession ses, HttpServletRequest req){
-//		mm.put("msg", "你好");
-		return "gallery";
-	}
-	
-	@RequestMapping(value = "test2", method = { RequestMethod.GET, RequestMethod.POST })
-	public String test2(ModelMap mm, HttpSession ses, HttpServletRequest req){
-//		mm.put("msg", "你好");
-		return "article";
-	}
-	
-	@RequestMapping(value = "test3", method = { RequestMethod.GET, RequestMethod.POST })
-	public String test3(ModelMap mm, HttpSession ses, HttpServletRequest req){
-//		mm.put("msg", "你好");
-		return "contact";
-	}
 }
