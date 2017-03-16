@@ -115,6 +115,14 @@
 	 
 	 <!-- 声明使用注解式事务 -->
 	 <tx:annotation-driven transaction-manager="transactionManager"/>
+	 
+	 <!-- Redis DataSource
+	 <bean class="com.zhh.common.RedisServer">
+	 	<constructor-arg name="redisHost" value="${redis.ip}"/>
+	 	<constructor-arg name="redisPort" value="${redis.port}"/>
+	 	<constructor-arg name="password" value="${redis.password}"/>
+	 </bean>
+	  -->
 </beans>
 
 

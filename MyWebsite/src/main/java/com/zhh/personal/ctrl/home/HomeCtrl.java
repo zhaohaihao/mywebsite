@@ -13,16 +13,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.zhh.personal.ctrl.BaseCtrl;
 
 @Controller
-@RequestMapping("home")
 public class HomeCtrl extends BaseCtrl{
 	
-	@RequestMapping(value = "test", method = { RequestMethod.GET, RequestMethod.POST }, produces = "text/html;charset=UTF-8")
-	public String test(ModelMap mm, HttpSession ses, HttpServletRequest req){
+	@RequestMapping(value = "home", method = { RequestMethod.GET, RequestMethod.POST })
+	public String home(ModelMap mm, HttpSession ses, HttpServletRequest req){
 		try {
 			Map<String, String> reqMap = getParam(null, req);
-			logger.info("params: " + reqMap);
+			logger.info("params: " + reqMap);	// 获得所有请求来的参数
 			
-			mm.put("msg", "hello");
+			
 			
 			handleSuc(mm);
 		} catch (Exception e) {

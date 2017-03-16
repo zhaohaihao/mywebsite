@@ -59,62 +59,6 @@ public class RemoteHttpUtil {
 
     }
     
-    
-	//多盟请求
-	public static String DmUrlGet(String strUrl) {
-		try {
-			URL url = new URL(strUrl);
-			HttpURLConnection con = (HttpURLConnection) url.openConnection();
-			con.setDoInput(true);
-			con.setDoOutput(true);
-			con.setReadTimeout(3000);
-			con.setAllowUserInteraction(false);
-			con.setUseCaches(false);
-			con.setRequestMethod("GET");
-			con.setRequestProperty("Content-Type",
-					"application/x-www-form-urlencoded;charset=UTF-8");
-			BufferedWriter bout = new BufferedWriter(new OutputStreamWriter(
-					con.getOutputStream()));
-			bout.flush();
-			bout.close();
-			return streamReadHtml(con.getInputStream());
-		} catch (Exception e) {
-			throw new RuntimeException(e.getMessage());
-		}
-	}
-    
-    
-    
-	//力美请求
-	public static String LmUrlGet(String strUrl) {
-		try {
-			URL url = new URL(strUrl);
-			HttpURLConnection con = (HttpURLConnection) url.openConnection();
-			con.setDoInput(true);
-			con.setDoOutput(true);
-			con.setReadTimeout(10000);
-			con.setAllowUserInteraction(false);
-			con.setUseCaches(false);
-			con.setRequestMethod("GET");
-			con.setRequestProperty("Content-Type",
-					"application/x-www-form-urlencoded;charset=UTF-8");
-			BufferedWriter bout = new BufferedWriter(new OutputStreamWriter(
-					con.getOutputStream()));
-			bout.flush();
-			bout.close();
-			return streamReadHtml(con.getInputStream());
-		} catch (Exception e) {
-			throw new RuntimeException(e.getMessage());
-		}
-	}
-    
-    
-    
-    
-    
-    
-    
-    
 	private static String streamReadHtml(InputStream istream) throws UnsupportedEncodingException{
 		String html = "";
 		byte[] responseBody = new byte[READ_BODY_SIZE];
